@@ -16,9 +16,9 @@ class Weather
 
 	def self.routes
 		return [{
-			:verb => "get",
+			:verb => :get,
 			:url => "set_location/:id",
-			:method => Weather.method(:set_location)
+			:method => :set_location
 		}]
 	end
 
